@@ -559,6 +559,33 @@ img {
 .footer__bottom--b li:nth-child(2) {
   margin-top: 3rem;
 }
+/* TRADITION PAGE */
+.traditionBanner{
+  padding: 5rem 0;
+}
+.traditionBanner__wrapper h1{
+  color: var(--clr-primary);
+  font-size: var(--h1);
+}
+.traditionBanner__wrapper p{
+  color: var(--clr-secondary);
+  font-style: italic;
+  font-size: var(--h5);
+}
+.traditionBanner__wrapper img{
+  width: 45rem;
+}
+.traditionBanner__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.traditionBanner__cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
 /* REPEATABLE PATTERN */
 .cards img {
   border-bottom: 4px solid var(--clr-secondary);

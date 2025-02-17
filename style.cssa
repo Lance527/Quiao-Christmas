@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Quicksand:wght@300..700&display=swap");
+:root 
+/* HEADER */
+.header { padding: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+ 
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+.header__logo a {
+  font-family: var(--font-secondary);
+  color: var(--clr-primary);
+  font-size: var(--h3);
+}
+.header__nav li a {
+  font-size: 1.4rem;
+  color: var(--clr-primary);
+  position: relative;
+}
+.header__nav li a::after {
+  position: absolute;
+  content: "";
+  background-color: var(--clr-secondary);
+  width: 0%;
+  height: 3px;
+  bottom: -3.1rem;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.header__nav li a:hover:after {
+  width: 100%;
+  transition: all 0.3s ease;
+}
